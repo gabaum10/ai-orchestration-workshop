@@ -2,11 +2,21 @@
 
 A practical, hands-on workshop teaching multi-persona AI orchestration for complex business deliverables. Learn to coordinate specialized AI agents to produce executive-ready work faster and with higher quality.
 
+## Workshop Levels
+
+**Level 1: Introduction to Claude (90 minutes)**
+A foundational session for anyone new to Claude. Learn the basics: how to use Claude effectively, structure prompts, work with Projects for persistent context, and create Artifacts. Perfect for those who want to understand Claude as a tool before learning orchestration.
+
+**Level 2: AI Orchestration (2.5-3 hours)**
+An advanced workshop teaching multi-persona AI coordination. Learn to break down complex work into specialized roles, coordinate handoffs between AI agents, and maintain quality across multi-agent pipelines. Recommended for those already comfortable using Claude.
+
 ## Overview
 
-This ~2.5-3 hour workshop teaches you how to break down complex work into specialized roles, coordinate handoffs between AI agents, and maintain quality across a multi-agent pipeline. You'll learn by seeing the approach demonstrated first, then building your own orchestrated workflow.
+**Level 1** introduces Claude's core capabilities through live demos and practical examples. Participants learn prompting fundamentals, persistent context through Projects, and generating deliverables with Artifacts.
 
-**Core Approach:** Show then build. We demonstrate a complete two-persona pipeline on a real document, then guide you in building your own with your actual work materials.
+**Level 2** teaches you how to break down complex work into specialized roles, coordinate handoffs between AI agents, and maintain quality across a multi-agent pipeline. You'll learn by seeing the approach demonstrated first, then building your own orchestrated workflow.
+
+**Core Approach:** Show then build. We demonstrate complete workflows on real documents, then guide you in building your own with your actual work materials.
 
 ## What You'll Learn
 
@@ -16,7 +26,7 @@ This ~2.5-3 hour workshop teaches you how to break down complex work into specia
 - **Quality gates:** Checkpoints that ensure rigor at each stage
 - **Iteration patterns:** When to refine within a stage vs. when to escalate back
 
-## Workshop Structure
+## Level 2 Workshop Structure
 
 ### Part 1: Demonstration (45-60 min)
 **The Challenger-Executor Pipeline**
@@ -60,7 +70,8 @@ You construct a two-persona workflow for your actual work:
 ai-orchestration-workshop/
 ├── README.md                           # This file
 ├── curriculum/
-│   └── session-outline.md             # Detailed session plan with timing
+│   ├── l1-session-outline.md          # Level 1: Introduction to Claude (90 min)
+│   └── session-outline.md             # Level 2: AI Orchestration (2.5-3 hours)
 ├── exercises/
 │   └── business-proposal-scenario.md  # Optional scenario if participants don't bring work
 ├── templates/
@@ -77,14 +88,15 @@ ai-orchestration-workshop/
 
 ## Prerequisites
 
-**Required:**
-- Access to Claude (API or web interface)
+**Level 1:**
+- Access to claude.ai (free tier is sufficient)
+- No prior experience with Claude required
+
+**Level 2:**
+- Access to Claude (Pro account recommended for Projects feature)
+- Basic prompting skills (Level 1 or equivalent experience)
 - A document or brief you want to improve (business proposal, technical spec, research report, etc.)
 - Willingness to iterate and debug
-
-**Helpful but not required:**
-- Experience with prompt engineering
-- Familiarity with your domain's quality standards
 
 ## Bringing Your Own Work
 
@@ -104,6 +116,11 @@ ai-orchestration-workshop/
 
 ## Getting Started
 
+**For Level 1 participants:**
+1. **Review the session outline:** `curriculum/l1-session-outline.md` - understand the flow
+2. **Ensure access to claude.ai** - create a free account if needed
+
+**For Level 2 participants:**
 1. **Review the session outline:** `curriculum/session-outline.md` - understand the flow
 2. **Explore the reference personas:** `personas/` directory - see working examples
 3. **Read the handoff template:** `templates/handoff-templates.md` - understand coordination structure
@@ -111,8 +128,13 @@ ai-orchestration-workshop/
 
 ## Facilitator Notes
 
-If you're running this workshop:
+**For Level 1:**
+- **Live demos are primary teaching mechanism.** Slides exist only to frame what you're about to show.
+- **Use real examples.** No generic "write me a poem" demos - use work the audience recognizes.
+- **Be honest about limitations.** "Claude can get things wrong. Always verify important outputs." This builds trust.
+- **Keep it practical.** No jargon without definition. No hype. Show the tool, teach the techniques, let them try it.
 
+**For Level 2:**
 - **Emphasize show-then-build:** The demo in Part 1 is critical. Participants need to see the full workflow before building their own.
 - **Encourage real work:** Generic scenarios teach less than actual documents participants care about.
 - **Expect iteration:** First pipelines rarely work perfectly. Budget time for debugging handoffs and refining personas.
